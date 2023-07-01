@@ -3,8 +3,8 @@
 :root {
     --primario: #000000;
     --primario_nav: #151515;
-    --secundario: #8cc555;
-    --terciario: #6ba54b;
+    --secundario: #40661c;
+    --terciario: #1e3b0e;
     --text_color: aliceblue;
 }
 
@@ -20,8 +20,8 @@
 
 }
 
-body{
-    
+body {
+
     height: 100vh;
     background-color: var(--primario);
 
@@ -38,21 +38,36 @@ section {
 .head {
     display: flex;
     height: 100vh;
-    background-image: url(/img/tropical\ rainforest.avif);
+    background-image: url(/img/principal.jpg);
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: cover;
-    box-shadow: inset 0px 0px 28px 42px #000;
+    /* box-shadow: inset 0px 0px 28px 42px #000; */
     align-items: center;
     justify-content: center;
 
-
-
-
 }
 
+.logo-center {
+    display: flex;
+    width: 80%;
+    height: 70vh;
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-center i {
+    color: var(--terciario);
+}
+
+
 .head h1 {
-    color: var(--text_color);
+    color: var(--terciario);
     font-size: 90px;
 
 }
@@ -70,8 +85,41 @@ section {
 
 }
 
-.card_principal{
+.card_principal {
     padding: 0;
-    background-color: transparent;
-  
+    background-color: var(--primario);
+    cursor: pointer;
+    transition: all 0.3s;
+
+
+
+}
+
+.card_principal:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.boton {
+    background-color: #151515;
+    background-color: var(--terciario);
+    border: none;
+}
+
+.boton:hover {
+    background-color: var(--secundario);
+}
+
+
+footer {
+    border-top: #151515 solid 2px;
+}
+
+@media (max-width: 720px) {
+    .head {
+        
+        height: 50vh;
+        background-image: url('/img/principal.jpg');
+        background-size: cover;
+    }
 }
