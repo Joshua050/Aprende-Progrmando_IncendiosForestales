@@ -118,6 +118,13 @@ footer {
     border-top: #151515 solid 2px;
 }
 
+.foot-item:hover{
+    
+    color: rgb(183, 187, 187) !important;
+
+}
+
+
 @media (max-width: 720px) {
     .head {
         
