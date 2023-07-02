@@ -27,44 +27,47 @@ body {
 
 }
 
-
-
 section {
-
-
     align-items: center;
 }
 
+.items:hover{
+    border-bottom: 2px solid grey;
+}
 .head {
     display: flex;
-    height: 100vh;
-    background-image: url(/img/principal.jpg);
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: cover;
+    height: 101vh;
     /* box-shadow: inset 0px 0px 28px 42px #000; */
     align-items: center;
     justify-content: center;
+    background-color: #081325;
 
 }
 
 .logo-center {
     display: flex;
-    width: 80%;
-    height: 70vh;
-
-    background-size: contain;
+    width: 50%;
+    height: 85vh;
+    background-image: url(/img/faviconlogo.png);
+    background-size: 100% ;
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
     align-items: center;
     justify-content: center;
+ 
 }
 
 .logo-center i {
     color: var(--terciario);
 }
 
+.logo-center a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
 
 .head h1 {
     color: var(--terciario);
@@ -80,7 +83,7 @@ section {
 
 
 .intro {
-
+  
     color: var(--text_color);
 
 }
@@ -119,7 +122,6 @@ footer {
     .head {
         
         height: 50vh;
-        background-image: url('/img/principal.jpg');
-        background-size: cover;
+    
     }
 }
