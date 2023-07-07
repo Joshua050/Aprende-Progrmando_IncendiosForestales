@@ -6,6 +6,7 @@
     --secundario: #40661c;
     --terciario: #1e3b0e;
     --text_color: aliceblue;
+    --btn-color:#081325;
 }
 
 
@@ -82,12 +83,20 @@ section {
 }
 
 
-.intro {
+p {
   
     color: var(--text_color);
 
 }
 
+#intro{
+    height: 100vh;
+
+}
+h4{
+    font-size: 40px;
+    font-weight: 300;
+}
 .card_principal {
     padding: 0;
     background-color: var(--primario);
@@ -104,8 +113,7 @@ section {
 }
 
 .boton {
-    background-color: #151515;
-    background-color: var(--terciario);
+  background-color: var(--btn-color);
     border: none;
 }
 
@@ -115,12 +123,40 @@ section {
 
 
 footer {
-    border-top: #151515 solid 2px;
+    height: 25vh;
+    /* border-top: 1px solid grey; */
+   
+   
 }
+
+.sombra{
+    width: 60%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(67, 66, 66, 0);
+  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+
+
+}
+
+.foot-item{
+
+color: rgb(195, 195, 195) !important;}
+
 
 .foot-item:hover{
     
     color: rgb(183, 187, 187) !important;
+
+}
+
+.bottom-items{
+  height: 60%;
+
 
 }
 
@@ -129,6 +165,12 @@ footer {
     .head {
         
         height: 50vh;
-    
+
+    }
+
+    .sombra{
+       
+        width: 100%;
+        
     }
 }
